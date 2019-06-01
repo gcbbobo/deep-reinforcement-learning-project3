@@ -8,29 +8,26 @@ My email address is: freedomgu@foxmail.com. Apologize for any inconvenience in a
 
 ###########################################################################################
 ## 1. The Environment
-The physical model of the problem is a double-jointed arm which is designed to move to target locations. The states are the 33 physical states of the system, and the control inputs are torque applicable to two joints. The figure below shows a multi-agent case. To simplify the problem, only the single agent case is considered. 
-
-![image](https://github.com/gcbbobo/deep-reinforcement-learning-project2/blob/master/reacher.PNG)
+Two agents controlling rackets are trying to bounce a ball over a net and keep the ball in play.
+![image](https://github.com/gcbbobo/deep-reinforcement-learning-project3/blob/master/competition.PNG)
 
 #### Reward:
-Agent's hand in goal location: reward +0.1/each step
+An agent hits the ball over the net:                                 reward +0.10 for this agent
+
+An agent lets a ball hit the ground or hits the ball out of bounds:  reward -0.01 for this agent
 
 #### State:
-The state space has 33 dimensions including position, rotation, velocity, and angular velocities of the two arm Rigidbodies.
+The observation space consists of 8 variables corresponding to the position and velocity of the ball and racket. 
+
+Each agent receives its own, local observation.
 
 #### Action:
-4 continuous actions available:
+2 continuous actions available for each agent:
 
-torques applicable to two joints of the agent, ranging from -1 to 1.
+movement toward (or away from) the net, and jumping.
 
 #### Target:
-An average score of +30 over 100 consecutive episodes.
-
-Details can be found:
-
-https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md
-
-Some interesting difference lies there. As defined in the introduction above, the state space should have 26 dimensions. However, the agent I trained is 33 dimensional. 
+An average score of +0.5 over 100 consecutive episodes, after taking the maximum over both agents. 
 
 ## 2. Installation
 #### Anaconda Installation and Virtual Environment Setup
