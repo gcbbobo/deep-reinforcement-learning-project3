@@ -149,9 +149,10 @@ Tennis_v6.10_original.ipynb + ddpg_agent.py + model.py:
 
 Train the more intelligent agent to achieve mean score >= 0.5 with 2 actors and 1 critic
 
-The training speed is improved rapidly to only several hundred episodes.
-
 New comments, new parameters.
+
+The training speed is improved rapidly and the problem is solved in only several hundred episodes.
+
 
 #### In folder: paper_version_not_solved
 
