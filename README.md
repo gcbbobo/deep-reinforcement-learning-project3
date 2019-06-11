@@ -129,4 +129,13 @@ https://drive.google.com/file/d/1eguoN8lslH5qmRKJoBGKoyyVSSnH835E/view?usp=shari
 ## 3.Instructions
 The following codes are developed based on the sample codes provided by Udacity.
 
+In folder: 
+
+In folder: min_as_settings
+
+Tennis_min.ipynb + ddpg_agent.py + model.py:
+
+Train the least intelligent agent to achieve minimum score >= 0.5
+
+In folder 
 
