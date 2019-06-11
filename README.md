@@ -129,13 +129,40 @@ https://drive.google.com/file/d/1eguoN8lslH5qmRKJoBGKoyyVSSnH835E/view?usp=shari
 ## 3.Instructions
 The following codes are developed based on the sample codes provided by Udacity.
 
-In folder: 
+#### In folder: update_every_multiple_steps
 
-In folder: min_as_settings
+Tennis_TAU_1e-1_update_30.ipynb + ddpg_agent.py + model.py:
+
+Train the more intelligent agent to achieve mean score >= 0.5 with 2 actor and 1 critic
+
+The network weights are updated every 30 time steps.
+
+#### In folder: min_as_settings
 
 Tennis_min.ipynb + ddpg_agent.py + model.py:
 
-Train the least intelligent agent to achieve minimum score >= 0.5
+Train the less intelligent agent to achieve mean score >= 0.5 with 2 actors and 1 critic
 
-In folder 
+#### In folder: copy_param_ref
+
+Tennis_v6.10_original.ipynb + ddpg_agent.py + model.py:
+
+Train the more intelligent agent to achieve mean score >= 0.5 with 2 actors and 1 critic
+
+The training speed is improved rapidly to only several hundred episodes.
+
+#### In folder: paper_version_not_solved
+
+Tennis_ref_to_paper(not_learning).ipynb + ddpg_agent.py + model.py:
+
+Try to train the more intelligent agent to achieve mean score >= 0.5 with 2 actors and 2 critics
+
+The actors only receives local information and the critics use global information during training except rewards.
+
+The idea follows that put forward in the paper.
+
+This version is incomplete and the agent is not learning at present.
+
+Parameters need further tuning.
+
 
